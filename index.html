@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,11 +27,66 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead">today's date</p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+        <div class="time-block mx-md-3 mx-lg-5 row">
+            <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">Morning</div>
+            <div class="plan-box col col-9 col-sm-10 col-lg-11" id="8"><textarea class="plan-text-area"></textarea><i
+                class="far fa-save"></i>
     </div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">9:00AM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="9"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">10:00AM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="10"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">11:00AM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id=11><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">12:00PM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="12"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">1:00PM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="13"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">2:00PM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="14"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">3:00PM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="15"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">4:00PM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="16"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">5:00PM</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="17"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i></div>
+</div>
+<div class="time-block mx-md-3 mx-lg-5 row">
+  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">Evening</div>
+  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="18"><textarea class="plan-text-area"></textarea><i
+      class="far fa-save"></i>
+  </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
