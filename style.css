@@ -4,13 +4,14 @@ body {
     line-height: 1;
   }
   
-  textarea{
-    background: transparent;
+  .plan-text-area{
+    background-color:transparent;
     border: none;
     resize: none;
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    width: 100%;
   }
   
   .jumbotron {
@@ -28,6 +29,7 @@ body {
   .time-block{
     text-align: center;
     border-radius: 15px;
+    background-color:none;
     
   }
   
@@ -35,17 +37,17 @@ body {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;
-    color: #77dd77;
+    color: black;
   }
   
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
+  .time-box {
+    background-color: black;
+    color: white;
     border-top: 1px dashed #000000;
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: grey;
     color: white;
   }
   
