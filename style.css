@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color:black;
   }
   
   .plan-text-area{
@@ -16,7 +17,7 @@ body {
   
   .jumbotron {
     text-align: center;
-    background-color: transparent;
+    background-color:blue;
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
@@ -60,7 +61,8 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+
+ 
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
@@ -72,5 +74,24 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+  
+  .fa-save {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    transition: color 300ms;
+    color: black;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  
+  .fa-saved {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: lightgreen;
+    cursor:pointer;
+    font-size: 2em;
   }
   
