@@ -4,6 +4,15 @@ body {
     line-height: 1;
     background-color:black;
   }
+
+  .clock-display {
+      background-color: transparent;
+      color: tomato;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: xx-large;
+      font-weight: bolder;
+
+  }
   
   .plan-text-area{
     background-color:transparent;
