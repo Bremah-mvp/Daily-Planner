@@ -106,15 +106,15 @@ $(document).ready(function () {
       planBox.each(function () {
   
         if (parseInt($(this).attr("id")) === 8 && parseInt($(this).attr("id")) >= clockHour) {
-          $(this).addClass("current-hour");
+          $(this).$(".current-hour");
         } else if (parseInt($(this).attr("id")) === 18 && parseInt($(this).attr("id")) <= clockHour) {
-          $(this).addClass("current-hour");
+          $(this).$(".current-hour");
         } else if (parseInt($(this).attr("id")) < clockHour) {
-          $(this).addClass("past-hour");
+          $(this).$(".past-hour");
         } else if (parseInt($(this).attr("id")) === clockHour) {
-          $(this).addClass("current-hour");
+          $(this).$(".current-hour");
         } else {
-          $(this).addClass("future-hour");
+          $(this).$(".future-hour");
         }
       });
     }
