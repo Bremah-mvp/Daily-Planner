@@ -2,7 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
-    background-color:black;
+    background-color:none;
+    background-image: url(./bremah4.jpg);
   }
 
   .lead {
@@ -76,8 +77,8 @@ body {
   }
   
   .present-hour {
-    background-color:red;
-    color: white;
+    background-color:transparent;
+    color: red;
   }
   
   .future-hour {
