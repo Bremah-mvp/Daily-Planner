@@ -5,6 +5,14 @@ body {
     background-color:black;
   }
 
+  .lead {
+      background-color: snow;
+      font-size: xx-large;
+      font-style: normal;
+      font-weight: bolder;
+  }
+  
+
   .clock-display {
       background-color: transparent;
       color: tomato;
@@ -18,7 +26,7 @@ body {
     background-color:transparent;
     border: none;
     resize: none;
-    color: #000000;
+    color: white;
     border-left: 1px solid transparent;
     padding: 10px;
     width: 100%;
@@ -40,7 +48,12 @@ body {
     text-align: center;
     border-radius: 15px;
     background-color:none;
-    
+    height: 55px;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    margin: 5px 0px;
+    position: relative;
+    padding: 0px;
+    z-index: 910;
   }
   
   .row {
@@ -57,23 +70,22 @@ body {
     border-bottom: 1px solid black;
   }
   
-  .past {
+  .past-hour {
     background-color: teal;
     color: white;
   }
   
-  .present {
-    background-color: #ff6961;
+  .present-hour {
+    background-color:red;
     color: white;
   }
   
-  .future {
+  .future-hour {
     background-color: #77dd77;
     color: white;
   }
 
- 
-  #saveBtn {
+  #saveButt {
     border-left: 1px solid black;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -83,7 +95,7 @@ body {
     height: 80%;
   }
   
-  #saveBtn i:hover {
+  #saveButt i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
@@ -107,3 +119,9 @@ body {
     font-size: 2em;
   }
   
+  /* adjusting the clock placement for smaller screens. */
+   @media only screen and (max-width: 767px) {
+    div.clock-delineator {    
+      padding-right: 44px;
+    }
+  }

@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // Setting up the early variables/grabbing the primary elements.
-    const plannerContainer = $(".planner-container");
+    
     const dateDisplay = $("#date-display");
     let now = moment().format("MMMM DD, YYYY");
     const clockDelineator = $(".clock-delineator");
