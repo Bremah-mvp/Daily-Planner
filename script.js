@@ -22,13 +22,7 @@ $(document).ready(function () {
         if (planTimeDisplay === "8:00AM") { planTimeDisplay = "Morning" };
         if (planTimeDisplay === "6:00PM") { planTimeDisplay = "Evening" };
         // The actual structure for each block
-        const timeBlockDiv = $("<div>").addClass("time-block mx-md-3 mx-lg-5 row");
-        plannerContainer.append(timeBlockDiv);
-        timeBlockDiv.append($("<div>").addClass("time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center").text(planTimeDisplay));
-        const planBoxDiv = $("<div>").addClass("plan-box col col-9 col-sm-10 col-lg-11").attr("id", i + 8);
-        timeBlockDiv.append(planBoxDiv);
-        planBoxDiv.append($("<textarea>").addClass("plan-text-area"));
-        planBoxDiv.append($("<i>").addClass("far fa-save"));
+        
       }
     }
     // Calling the function to build the planner
@@ -106,15 +100,15 @@ $(document).ready(function () {
       planBox.each(function () {
   
         if (parseInt($(this).attr("id")) === 8 && parseInt($(this).attr("id")) >= clockHour) {
-          $(this).$(".current-hour");
+          $(this).addClass("current-hour");
         } else if (parseInt($(this).attr("id")) === 18 && parseInt($(this).attr("id")) <= clockHour) {
-          $(this).$(".current-hour");
+          $(this).addClass("current-hour");
         } else if (parseInt($(this).attr("id")) < clockHour) {
-          $(this).$(".past-hour");
+          $(this).addClass("past-hour");
         } else if (parseInt($(this).attr("id")) === clockHour) {
-          $(this).$(".current-hour");
+          $(this).addClass("current-hour");
         } else {
-          $(this).$(".future-hour");
+          $(this).addClass("future-hour");
         }
       });
     }
