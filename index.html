@@ -1,118 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Work Day Scheduler</title>
-  </head>
+</head>
 
-  <body>
-
-  
+<body>
 
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead1">A simple calendar app for scheduling your work day</p>
-      <p id="date-display" class="lead">today's date</p>
-      <div class="clock-delineator"><span class="clock-display"></span>
-      </header>
-    
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead1">A simple calendar app for scheduling your work day</p>
+        <p id="date-display" class="lead">today's date</p>
+        <div class="clock-delineator"><span class="clock-display"></span>
+    </header>
+
     <div class="container">
-       
-        <div class ="">
-        <div class="time-block mx-md-3 mx-lg-5 row">
-            <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">Morning</div>
-            <div class="plan-box col col-9 col-sm-10 col-lg-11" id="8"><textarea class="plan-text-area"></textarea><button
-                class="far fa-save" id="saveButt" ></button>
-    </div>
-</div>
 
-<div class="time-block mx-md-3 mx-lg-5 row">
-    <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">9:00AM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="9"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">10:00AM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="10"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">11:00AM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id=11><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-</div>
+        <div class="">
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">Morning</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="8"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
 
-<div class ="">
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">12:00PM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="12"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-</div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">9:00AM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="9"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">10:00AM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="10"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">11:00AM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id=11><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+        </div>
 
-<div class="">
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">1:00PM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="13"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">2:00PM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="14"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">3:00PM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="15"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">4:00PM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="16"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">5:00PM</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="17"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-    </div>
-</div>
-<div class="time-block mx-md-3 mx-lg-5 row">
-  <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">Evening</div>
-  <div class="plan-box col col-9 col-sm-10 col-lg-11" id="18"><textarea class="plan-text-area"></textarea><button
-      class="far fa-save" id="saveButt"></button>
-  </div>
-</div>
+        <div class="">
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">12:00PM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="12"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
+        <div class="">
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">1:00PM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="13"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">2:00PM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="14"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">3:00PM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="15"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">4:00PM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="16"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">5:00PM</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="17"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+            <div class="time-block mx-md-3 mx-lg-5 row">
+                <div class="time-box col-3 col-sm-2 col-lg-1 d-flex align-items-center">Evening</div>
+                <div class="plan-box col col-9 col-sm-10 col-lg-11" id="18"><textarea
+                        class="plan-text-area"></textarea><button class="far fa-save" id="saveButt"></button>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="./script.js"></script>
+</body>
+
 </html>
