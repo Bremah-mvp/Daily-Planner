@@ -1,3 +1,4 @@
+/* body style */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -6,6 +7,7 @@ body {
     background-image: url(./bremah4.jpg);
   }
 
+  /* lead atrributes */
   .lead {
       background-color: snow;
       font-size: xx-large;
@@ -13,7 +15,7 @@ body {
       font-weight: bolder;
   }
   
-
+/* display clock styling */
   .clock-display {
       background-color: transparent;
       color: tomato;
@@ -22,7 +24,7 @@ body {
       font-weight: bolder;
 
   }
-  
+  /* text area atrribute */
   .plan-text-area{
     background-color:transparent;
     border: none;
@@ -33,6 +35,7 @@ body {
     width: 100%;
   }
   
+  /* jumbotron attributes */
   .jumbotron {
     text-align: center;
     background-color:blue;
@@ -45,6 +48,7 @@ body {
     white-space: pre-wrap;
   }
   
+  /* time block styles and attributes */
   .time-block{
     text-align: center;
     border-radius: 15px;
@@ -57,6 +61,7 @@ body {
     z-index: 910;
   }
   
+  /* row styling */
   .row {
     white-space: pre-wrap;
     height: 80px;
@@ -64,6 +69,7 @@ body {
     color: black;
   }
   
+  /* time box atrributes */
   .time-box {
     background-color: black;
     color: white;
@@ -71,21 +77,25 @@ body {
     border-bottom: 1px solid black;
   }
   
+  /* past hour style, atrributes */
   .past-hour {
     background-color: teal;
     color: white;
   }
   
+  /* present hour appearance set */
   .present-hour {
     background-color:transparent;
     color: red;
   }
   
+  /* future hour style */
   .future-hour {
     background-color: #77dd77;
     color: white;
   }
 
+  /* save button eliminated from the code for now */
   #saveButt {
     border-left: 1px solid black;
     border-top-right-radius: 5px;
@@ -96,11 +106,12 @@ body {
     height: 80%;
   }
   
-  #saveButt i:hover {
+  .fa-save i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
   
+  /* far save atrributes */
   .fa-save {
     position: absolute;
     right: 10px;
@@ -111,6 +122,7 @@ body {
     font-size: 2em;
   }
   
+/* far save styles */
   .fa-saved {
     position: absolute;
     right: 10px;

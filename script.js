@@ -1,39 +1,33 @@
 $(document).ready(function () {
 
-    // Setting up the early variables/grabbing the primary elements.
-    
+    // Variables
     const dateDisplay = $("#date-display");
     let now = moment().format("MMMM DD, YYYY");
     const clockDelineator = $(".clock-delineator");
     const clockDisplay = $(".clock-display");
   
-    // Displaying the current date as header
+    // Displaying the current date
     dateDisplay.text(now);
   
-    // Building the time-blocks to fill the planner.
+    // activating the timeblock
     function addTimeBlock() {
   
-      // Setting moment up to use it to populate the times
       let planTimeDisplay = moment().hour(8).format("h:00A");
       for (let i = 0; i < 11; i++) {
-        // Incrementing moment for each block
         planTimeDisplay = moment().hour(8 + i).format("h:00A");
-        // Setting up first and last blocks as Morning/Evening bookends for the day
         if (planTimeDisplay === "8:00AM") { planTimeDisplay = "Morning" };
         if (planTimeDisplay === "6:00PM") { planTimeDisplay = "Evening" };
-        // The actual structure for each block
-        
+           
       }
     }
-    // Calling the function to build the planner
+    
     addTimeBlock();
   
-    // Now that the planner is built we can fetch these elements and set variables
     const timeBlock = $(".time-block");
     const planTextArea = $(".plan-text-area");
     const planBox = $(".plan-box");
   
-    // Initializing the Day planner array to use for local storage
+    // Initialize the Day planner array to use for local storage
     let dayPlanArray = JSON.parse(localStorage.getItem("saved-plan"));
     if (!dayPlanArray) {
       initializeDayPlanArray();
@@ -43,7 +37,7 @@ $(document).ready(function () {
   
       dayPlanArray = ["", "", "", "", "", "", "", "", "", "", "", ""];
   
-      // Clearing the plans each day!
+      // Clear the plans each day
       dayPlanArray[11] = now;
       localStorage.setItem("saved-plan", JSON.stringify(dayPlanArray));
       writeThePlans();
@@ -52,14 +46,14 @@ $(document).ready(function () {
     // Sending the Day Planner array to storage
     localStorage.setItem("saved-plan", JSON.stringify(dayPlanArray));
   
-    // Writing the stored plans to the planner.
+    
     function writeThePlans() {
       planTextArea.each(function (index) {
         $(this).text(dayPlanArray[index]);
       })
     }
   
-    // Someone has entered a plan and clicked save, now let's save the plan!
+    // saving the plan
     timeBlock.on("click", function () {
       let saveButt = event.target;
   
@@ -70,7 +64,8 @@ $(document).ready(function () {
         saveButt = $(this).find("i");
         dayPlanArray[eventArrayIndex] = enteredEvent;
         localStorage.setItem("saved-plan", JSON.stringify(dayPlanArray));
-        // A little style for user feedback on icon click.
+
+        //  Style on icon click.
         saveButt.addClass("fa-saved");
         writeThePlans();
         setTimeout(function () {
@@ -79,16 +74,17 @@ $(document).ready(function () {
       }
     });
   
-    // Initializing the sliding clock variable
+    // Initialize the slide down clock. 
     let clockPosition = 234;
   
-    // This function sets the sliding clock position and colors for the time blocks 
+    // Set the sliding clock position and colors for the time blocks 
     function colorCode() {
-      // Setting the clock
-      let currentTime = moment();
+      
+        // Start the clock
+      let currentTime = moment()
       clockDisplay.text(currentTime.format("h:mm"));
   
-      // The sliding clock positioning
+      //  Slide clock positioning
       let clockHour = parseInt(currentTime.format("H"));
       let clockMinute = parseInt(currentTime.format("m"));
       clockPosition = clockHour * 60 + clockMinute - 299;
@@ -112,7 +108,7 @@ $(document).ready(function () {
         }
       });
     }
-    // We're going to run the color code function every second to update the clock and set the colors.
+    // Color code function for every second to update the clock and set the colors.
     setInterval(function () {
       colorCode();
   
@@ -123,8 +119,7 @@ $(document).ready(function () {
       }
     }, 1000)
   
-    // Start the app by  building the planner and setting up the colors and clock.
-    writeThePlans();
+   writeThePlans();
     colorCode();
   
   });
