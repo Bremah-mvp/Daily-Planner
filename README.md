@@ -21,6 +21,7 @@ I used moment.js to add time and date to the application and enable the app to k
 activities or plans that would be saved .
 
 HOW IT WORKS
+
 When you open the application it shows you the current date and time.
 Presents you with time blocks that cover the entire standard working day time that you can scroll through.
 A user can then save a even or plan with in the time blocks, it could be any of his daily activity schedule
