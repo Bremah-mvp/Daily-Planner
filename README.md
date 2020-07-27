@@ -1,22 +1,28 @@
 DAILY PLANNER APPLICATION.
+
 A great way to get on top of your schedule and get all your activities done on time.
 
 TOOLS USED TO CREATE THE APP
 
 HTML
+
 I used html to design the structure or the first layout of the application.
 
 CSS
+
 I used css to add styles and coloring to make the application more attractive.
 
 BOOTSTRAP
+
 I used bootstrap to add more styles to the layout so the app can be even more atrractive and flexible.
 
 JAVASCRIPT
+
 Used javascript to make the app dynamic and activate all the functionality so the app can perfom its 
 designated job.
 
 MOMENT.JS
+
 I used moment.js to add time and date to the application and enable the app to keep track of all the 
 activities or plans that would be saved .
 
