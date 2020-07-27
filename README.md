@@ -1,8 +1,8 @@
-DAILY PLANNER APPLICATION.
+                  DAILY PLANNER APPLICATION.
 
 A great way to get on top of your schedule and get all your activities done on time.
 
-TOOLS USED TO CREATE THE APP
+                TOOLS USED TO CREATE THE APP
 
 HTML
 
@@ -26,7 +26,7 @@ MOMENT.JS
 I used moment.js to add time and date to the application and enable the app to keep track of all the 
 activities or plans that would be saved .
 
-HOW IT WORKS
+                     HOW IT WORKS
 
 When you open the application it shows you the current date and time.
 Presents you with time blocks that cover the entire standard working day time that you can scroll through.
