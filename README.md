@@ -27,5 +27,5 @@ Exact/present hour is transparent, past hours is teal, future hours is lime gree
 This is the link to the application : https://bremah-mvp.github.io/Daily-Planner/
 
 Below is a snapshot of how the application looks like;
-[alt text](https://github.com/Bremah-mvp/Daily-Planner/blob/master/assets/snap.png)
+![alt text](https://github.com/Bremah-mvp/Daily-Planner/blob/master/assets/snap.png)
 
