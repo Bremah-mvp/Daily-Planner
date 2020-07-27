@@ -106,7 +106,7 @@ body {
     right: 10px;
     top: 12px;
     transition: color 300ms;
-    color: black;
+    color:red;
     cursor: pointer;
     font-size: 2em;
   }
